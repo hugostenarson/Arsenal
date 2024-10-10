@@ -2,12 +2,12 @@
 
 string contents = File.ReadAllText("weapon.json");
 
-//var weapon = JsonSerializer.Deserialize<Weapon>(contents)
+
 if (JsonSerializer.Deserialize<Weapon>(contents) is not Weapon w) {
     Console.WriteLine("Error!");
     return;
 }
-//Weapon w = JsonSerializer.Deserialize<Weapon>(contents);
+
 
 Console.WriteLine("Hur många attacker?");
 
